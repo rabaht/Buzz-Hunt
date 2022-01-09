@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Dh.css">
+    <link rel="stylesheet" href="Dh-v2.css">
     <title>Buzzhunt</title>
-    <link rel="icon" type="image/png" href="duckhunt.png" />
+    <link rel="icon" type="image/png" href="duckhunt.png" /> <!--on change l'icone de la page pour faire jolie-->
 </head>
 
 <body>
-    
-    
-    <div id="Zonedejeux"><div id="Zone_curseur"><div id="cannard"><img src="Buzz.png"></div></div></div>
-    
-    
-        
-   
-   
-    <button id="start_game"onclick="window.location.href='Dh.html'">Nouvelle partie</button>
-   
+    <div id="zone-jeux">
+        <div id="zone-curseur">
+            <div id="buzz">
+                <img src="Buzz.png">
+            </div>
+        </div>
+
+        <div id="zone-afficheur">
+            <button id="start-game"onclick="window.location.href='Dh.html'">Nouvelle partie</button> <!-- Bouton nouvelle partie -->
+            
+            <div class="container-afficheur">
+                <img src="afficheur.png">
+                <div class="text-afficheur">
+                    <span class="left">Temps : </span><span id="time">02:00</span>
+                </div>
+            </div>  <!-- Div du timer -->
+
+            <div class="container-afficheur">
+                <img src="afficheur.png">
+                <div class="text-afficheur">
+                    <span class="left">Buzz l'Eclair : </span><span class="right" id="points_canard">0</span>
+                </div>
+            </div>
+
+            <div class="container-afficheur">
+                <img src="afficheur.png"> 
+                <div class="text-afficheur">
+                    <span class="left">Chasseur : </span><span class="right" id="points_chasseur">0</span>
+                </div>
+            </div>
+        </div>
+
     </div>
- <div id="afficheur">
-    <img src="afficheur.png">
-    <!--ON COMMENCE LE TIMER EN HTML-->
-    <div><div id =text1>Temps  : <span id="time">02:00</div></span></div> 
-</div>
-<div id =afficheur1> <img src="afficheur.png"><div class="box">
-    <span class="left"><div id =text1>Buzz l'eclair :</span>
-    <span class="right" id="points_canard">0</div></span>
-</div></div>
-<div id =afficheur2><img src="afficheur.png"> <div class="box">
-    <span class="left"><div id =text1>Chasseur :</span>
-    <span class="right" id="points_chasseur">0</div></span>
-</div> </div>
 </body>
 
-<script src="Dh.js"></script>
+<script src="Dh.js"></script> <!--On lie Ã  la page js-->
 </html>
